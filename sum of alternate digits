@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int n, i = 1, sum = 0;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    while(n > 0) {
+        if(i% 2 == 1)
+            sum += n % 10;
+        n /= 10;
+        i++;
+    }
+    printf("Sum of alternate digits = %d\n", sum);
+    return 0;
+}
