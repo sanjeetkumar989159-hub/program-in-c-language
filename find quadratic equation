@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{printf("***IF ELSE PROGRAMME***\n");
+int a,b,c,d;
+printf("enter a b and c");
+scanf("%d",&a);
+scanf("%d",&b);
+scanf("%d",&c);
+
+d = b*b-4*a*c;
+if(d==0)
+    printf("null\n");
+else if(d>0)
+    printf("real solution\n");
+else
+    printf("no solution or complex \n ");
+printf("%d",d);
+}
+
+
+
+
+
+
+
