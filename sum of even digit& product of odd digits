@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n, digit, sum = 0, prod = 1;
+    printf("Enter number: ");
+    scanf("%d", &n);
+    while(n > 0) {
+        digit = n % 10;
+        if(digit % 2 == 0)
+            sum += digit;
+        else
+            prod *= digit;
+        n /= 10;
+    }
+    printf("Sum of even digits = %d\n", sum);
+    printf("Product of odd digits = %d\n", prod);
+    return 0;
+}
